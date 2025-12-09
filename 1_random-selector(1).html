@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机抽人系统</title>
+    <link rel="stylesheet" href="random-selector.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>随机抽人系统</h1>
+            <p>1-36号学号随机抽取 | 公平公正 | 不重复</p>
+        </header>
+        
+        <main>
+            <!-- 抽奖显示区域 -->
+            <div class="selector-display">
+                <div id="current-number" class="number-display">00</div>
+                <div id="status" class="status">点击开始按钮开始抽奖</div>
+            </div>
+            
+            <!-- 控制按钮 -->
+            <div class="controls">
+                <button id="start-btn" class="btn btn-primary">开始抽奖</button>
+                <button id="stop-btn" class="btn btn-danger" disabled>停止抽奖</button>
+                <button id="reset-btn" class="btn btn-secondary">重置</button>
+            </div>
+            
+            <!-- 已抽取号码显示 -->
+            <div class="results">
+                <h2>已抽取号码</h2>
+                <div id="drawn-numbers" class="numbers-grid">
+                    <!-- 已抽取的号码会显示在这里 -->
+                </div>
+                <div id="remaining-info" class="remaining-info">
+                    剩余 <span id="remaining-count">36</span> 个号码
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2024 随机抽人系统 | 概率均等 | 公平公正</p>
+        </footer>
+    </div>
+    
+    <script src="random-selector.js"></script>
+</body>
+</html>
